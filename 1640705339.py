@@ -26,3 +26,11 @@ for data in array:
         cur = cur.nextNode
 
 list.printLinkedList()
+
+newNode = Node(0)
+cur = list.headNode
+
+while cur.nextNode is not None:
+    cur = cur.nextNode
+
+cur.nextNode = newNode
